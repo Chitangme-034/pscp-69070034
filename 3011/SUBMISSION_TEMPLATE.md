@@ -15,19 +15,19 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-Colors
+3011 / Colors
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-3011
+-
 ```
 
 OJ status:
 
 ```text
-Pass
+Not Submit
 ```
 
 Independent time spent on this problem:
