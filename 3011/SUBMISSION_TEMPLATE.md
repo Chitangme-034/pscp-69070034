@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+Colors
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+3011
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+0-15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to input 2 primary colors(which are Red, Yellow, and Blue) and see the results of mixing them together. If it's Red and Yellow or Yellow and Red, the result is Orange. If it's Red and Blue or Blue and Red, the result is Green. And if it's Blue and Yellow or Yellow and Blue, the result is Green. However, if the input colors aren't any of the primary colors, it's an error.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: First is creating 2 input variables for each input.
+Step 2: Next, use the "if, elif, else" for different commands.
+Step 3: Finally, add the print of what output the inputs will be.
 ```
 
 ---
@@ -115,7 +115,9 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: First is creating 2 input variables for each color. Color1 will be for the first input and Color2 will be for the second input.
+Step 2: Next, use the "if, elif, else" for different commands. If for Red and Yellow or Yellow and Red, print the output to be Orange. Elif for Red and Blue or Blue and Red, print the output to be Green. Last elif for Blue and Yellow or Yellow and Blue, print the output to be Green. Else will be when either or both inputs aren't the following colors in "if" and "elif", the print output will be Error.
+Step 3: Finally, add the print of what output the inputs will be.
 ```
 
 ---
@@ -135,31 +137,32 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+Because to test if the code works if it's the same as in the commands.
 ```
 
 Input:
 
 ```text
-
+Red
+Yellow
 ```
 
 Expected output:
 
 ```text
-
+Orange
 ```
 
 Actual output:
 
 ```text
-
+Orange
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +170,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+Because to test if the code works if it's different from the commands.
 ```
 
 Input:
 
 ```text
-
+Black
+Pink
 ```
 
 Expected output:
 
 ```text
-
+Error
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +203,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+Because to test if the code works if some of the letters are a bit different.
 ```
 
 Input:
 
 ```text
-
+blue
+red
 ```
 
 Expected output:
 
 ```text
-
+Violet
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Not Pass
 ```
 
 ---
@@ -233,7 +238,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +256,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +281,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+-
 ```
 
 What did they help with?
 
 ```text
-
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Using def main, inputs, if elif and else, and output
 ```
 
 Did you copy any code from another person?
@@ -305,10 +310,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
