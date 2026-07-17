@@ -137,7 +137,7 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-Because to test if the code works if it's the same as in the commands.
+To test if the code works if it's the same as in the commands.
 ```
 
 Input:
@@ -209,26 +209,26 @@ Because to test if the code works if some of the letters are a bit different.
 Input:
 
 ```text
-blue
-red
+Blue
+Blue
 ```
 
 Expected output:
 
 ```text
-Violet
+Blue
 ```
 
 Actual output:
 
 ```text
-Error
+Blue
 ```
 
 Result:
 
 ```text
-Not Pass
+Pass
 ```
 
 ---
@@ -293,7 +293,7 @@ What did they help with?
 What did you still do by yourself?
 
 ```text
-Using def main, inputs, if elif and else, and output
+Using def main, inputs, if elif and else, output, and solving the issue
 ```
 
 Did you copy any code from another person?
@@ -315,5 +315,5 @@ Write `Yes` for each statement.
 | I recorded the real OJ status. | Yes |
 | I did not copy AI-generated text directly into this file. | Yes |
 | I did not copy code from another person. | Yes |
-| If I received human help, I disclosed it in this file. | Yes |
+| If I received human help, I disclosed it in this file. | No |
 | I submitted the final code to the OJ by myself. | Yes |
