@@ -27,7 +27,7 @@ OJ submission ID, if submitted:
 OJ status:
 
 ```text
-Submit
+Pass
 ```
 
 Independent time spent on this problem:
