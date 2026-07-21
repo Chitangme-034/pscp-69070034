@@ -1,6 +1,6 @@
-"""Season"""
+"""Seasons"""
 def main():
-    """4"""
+    """Day 21"""
     month = int(input())
     day = int(input())
     if month < 3 or (month == 3 and day < 21):
