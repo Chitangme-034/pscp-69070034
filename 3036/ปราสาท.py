@@ -8,9 +8,8 @@ def main():
         far = (floor**2) - x
         room = 2*(floor) - 1
         if not far % 2:
-            room = room - 1
+            print (room - 1)
         else:
-             room = room - 2
-    print(room)
+             print (room - 2)
 
 main()
