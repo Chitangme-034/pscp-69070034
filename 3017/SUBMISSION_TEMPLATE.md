@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3017 / Bill
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+551588
 ```
 
 OJ status:
 
 ```text
-
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to calculate the final price that the customer has to pay in 2 place decimal.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
+Step 1: First is creating an input variables.
+Step 2: Next calculate the price of the service charge. Then adding that to the VAT.
+Step 3: Fianlly, make the output in the a 2 place decimal.
 ```
 
 ---
@@ -115,7 +115,10 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: First is creating an input variables for the price of the food and drink.
+Step 2: Next calculate the price of the service charge by it with the 10% to see if it's more than 50 or less than 1000.
+Step 3: Then adding the input price with the service charge we and multiply that with the 7% VAT. 
+Step 4: Fianlly, print the output in the a 2 place decimal.
 ```
 
 ---
@@ -135,31 +138,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To check if the testcase works on the code or not.
 ```
 
 Input:
 
 ```text
-
+100
 ```
 
 Expected output:
 
 ```text
-
+160.50
 ```
 
 Actual output:
 
 ```text
-
+160.50
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +170,31 @@ Result:
 Why I chose this case:
 
 ```text
-
+To test if the code was able to calculate the right output
 ```
 
 Input:
 
 ```text
-
+1000
 ```
 
 Expected output:
 
 ```text
-
+1177.00
 ```
 
 Actual output:
 
 ```text
-
+1177.00
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +202,31 @@ Result:
 Why I chose this case:
 
 ```text
-
+To check if the testcase works on the code or not.
 ```
 
 Input:
 
 ```text
-
+99999
 ```
 
 Expected output:
 
 ```text
-
+108068.93
 ```
 
 Actual output:
 
 ```text
-
+108068.93
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ---
@@ -233,7 +236,7 @@ Result:
 Did you use AI for this problem?
 
 ```text
-
+No
 ```
 
 If yes, also complete:
@@ -251,7 +254,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,25 +279,25 @@ Not allowed:
 Who helped you?
 
 ```text
-
+A friend
 ```
 
 What did they help with?
 
 ```text
-
+Explaining to me how to calculate this question
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing the code from the solution they taught me
 ```
 
 Did you copy any code from another person?
 
 ```text
-
+No
 ```
 
 ---
@@ -305,10 +308,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. |  |
-| I understand my final code. |  |
-| I recorded the real OJ status. |  |
-| I did not copy AI-generated text directly into this file. |  |
-| I did not copy code from another person. |  |
-| If I received human help, I disclosed it in this file. |  |
-| I submitted the final code to the OJ by myself. |  |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
