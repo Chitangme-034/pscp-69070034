@@ -21,7 +21,7 @@ OJ problem number/title:
 OJ submission ID, if submitted:
 
 ```text
-
+551538
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The question wants us to swap the the letters in a word. From the last letter to be the first letter instead. And the letters in the output must be in lowercase eventhough if there are uppercase letters in the input word.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
+Step 1: First is creating an input variables.
+Step 2: Add print with the [] and lowercase command.
+Step 3: Testing the result of the code.
 ```
 
 ---
@@ -115,7 +115,9 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: First is creating an input variables.
+Step 2: Add print with the [] and lowercase command.
+Step 3: Testing the result of the code.
 ```
 
 ---
@@ -135,31 +137,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To test if the testcase works on the code or not
 ```
 
 Input:
 
 ```text
-
+harry
 ```
 
 Expected output:
 
 ```text
-
+yrrah
 ```
 
 Actual output:
 
 ```text
-
+yrrah
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +169,31 @@ Result:
 Why I chose this case:
 
 ```text
-
+To test if the code works or not
 ```
 
 Input:
 
 ```text
-
+John
 ```
 
 Expected output:
 
 ```text
-
+nhoj
 ```
 
 Actual output:
 
 ```text
-
+nhoj
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +201,31 @@ Result:
 Why I chose this case:
 
 ```text
-
+To test if the code works or not
 ```
 
 Input:
 
 ```text
-
+NADIA
 ```
 
 Expected output:
 
 ```text
-
+aidan
 ```
 
 Actual output:
 
 ```text
-
+aidan
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ---
@@ -233,7 +235,7 @@ Result:
 Did you use AI for this problem?
 
 ```text
-
+No
 ```
 
 If yes, also complete:
@@ -251,7 +253,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,25 +278,25 @@ Not allowed:
 Who helped you?
 
 ```text
-
+-
 ```
 
 What did they help with?
 
 ```text
-
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Doing the code
 ```
 
 Did you copy any code from another person?
 
 ```text
-
+No
 ```
 
 ---
@@ -305,10 +307,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. |  |
-| I understand my final code. |  |
-| I recorded the real OJ status. |  |
-| I did not copy AI-generated text directly into this file. |  |
-| I did not copy code from another person. |  |
-| If I received human help, I disclosed it in this file. |  |
-| I submitted the final code to the OJ by myself. |  |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | No |
+| I submitted the final code to the OJ by myself. | Yes |
