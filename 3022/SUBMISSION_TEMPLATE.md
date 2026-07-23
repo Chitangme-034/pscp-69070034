@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3022 / Temperature
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+566009
 ```
 
 OJ status:
 
 ```text
-
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to calculate the given temperature unit to another unit. 
 ```
 
 ---
