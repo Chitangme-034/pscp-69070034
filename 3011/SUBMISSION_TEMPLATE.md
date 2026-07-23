@@ -293,7 +293,7 @@ What did they help with?
 What did you still do by yourself?
 
 ```text
-Using def main, inputs, if elif and else, output, and solving the issue
+Doing the code by using def main, inputs, if elif and else, output, and solving the issue
 ```
 
 Did you copy any code from another person?
