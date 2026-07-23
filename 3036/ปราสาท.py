@@ -10,6 +10,6 @@ def main():
         if not far % 2:
             print (room - 1)
         else:
-             print (room - 2)
+            print (room - 2)
 
 main()
