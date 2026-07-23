@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3042/หาร 10
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+565842
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to create a input for a positive number and find the number that could be divide by 10 and the remainder when divided by 10 is 0.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Create an input variable.
+Step 2: Repeat the input variable by dividing it until it's 0
+Step 3: Stop printing the output when all the numbers in the input variable is 0.
 ```
 
 ---
@@ -115,7 +115,9 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create an input variable.
+Step 2: Use while loop to repeat the input variable by dividing it until it's 0. Each number will be check if it is divisible by 10 using the module %.
+Step 3: Stop printing the output when all the numbers in the input variable is 0 and followed by a space.
 ```
 
 ---
@@ -135,31 +137,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To check if the testcase works on the code or not.
 ```
 
 Input:
 
 ```text
-
+80
 ```
 
 Expected output:
 
 ```text
-
+80 70 60 50 40 30 20 10 0
 ```
 
 Actual output:
 
 ```text
-
+80 70 60 50 40 30 20 10 0
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +169,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To check if the testcase works on the code or not.
 ```
 
 Input:
 
 ```text
-
+136
 ```
 
 Expected output:
 
 ```text
-
+130 120 110 100 90 80 70 60 50 40 30 20 10 0
 ```
 
 Actual output:
 
 ```text
-
+130 120 110 100 90 80 70 60 50 40 30 20 10 0
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +201,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To see if the code works correctly or not.
 ```
 
 Input:
 
 ```text
-
+1036
 ```
 
 Expected output:
 
 ```text
-
+1030 1020 1010 1000 990 980 970 960 950 940 930 920 910 900 890 880 870 860 850 840 830 820 810 800 790 780 770 760 750 740 730 720 710 700 690 680 670 660 650 640 630 620 610 600 590 580 570 560 550 540 530 520 510 500 490 480 470 460 450 440 430 420 410 400 390 380 370 360 350 340 330 320 310 300 290 280 270 260 250 240 230 220 210 200 190 180 170 160 150 140 130 120 110 100 90 80 70 60 50 40 30 20 10 0
 ```
 
 Actual output:
 
 ```text
-
+1030 1020 1010 1000 990 980 970 960 950 940 930 920 910 900 890 880 870 860 850 840 830 820 810 800 790 780 770 760 750 740 730 720 710 700 690 680 670 660 650 640 630 620 610 600 590 580 570 560 550 540 530 520 510 500 490 480 470 460 450 440 430 420 410 400 390 380 370 360 350 340 330 320 310 300 290 280 270 260 250 240 230 220 210 200 190 180 170 160 150 140 130 120 110 100 90 80 70 60 50 40 30 20 10 0
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +235,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +253,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +278,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+-
 ```
 
 What did they help with?
 
 ```text
-
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing and testing the code
 ```
 
 Did you copy any code from another person?
@@ -305,10 +307,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
 | I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |

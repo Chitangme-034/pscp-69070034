@@ -115,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: First is creating 2 int input variables for each input. Month will be the first input and day(for date) will be the second input.
+Step 1: First is creating 2 input variables for each input. Month will be the first input and day(for date) will be the second input.
 Step 2: Next, use the "if, elif, else" and "or, and" for different commands. If month is less than 3 or equals 3 but the day is less than 21, then it's winter. If month is less than 6 or equals 6 but the day is less than 21, then it's spring. It goes on till the 12th month. The rest is winter.
 Step 3: Finally, add the print and testing the output of the inputs.
 ```
