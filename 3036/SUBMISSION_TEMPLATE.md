@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3036/ปราสาท
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+565893
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
