@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-30-60 minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants us to calculate the given temperature unit to another unit. 
+The problem wants us to calculate the given temperature unit to another unit.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
+Step 1: First, read the questions and create the input variables.
+Step 2: Next, typing down the code.
+Step 3: Finally, checking and testing the code.
 ```
 
 ---
@@ -115,7 +115,9 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: First, create 3 variables. temp is represented as Celsius and the input number. start is which unit you begin with and end is what you want the start unit to be.
+Step 2: Next, typing down the equations by converting start to be in Celsius unit before turning it into the end input unit.
+Step 3: Finally, checking and testing the code.
 ```
 
 ---
@@ -135,31 +137,33 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To check if the testcase works on the code or not.
 ```
 
 Input:
 
 ```text
-
+37.6
+C
+K
 ```
 
 Expected output:
 
 ```text
-
+310.75
 ```
 
 Actual output:
 
 ```text
-
+310.75
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +171,33 @@ Result:
 Why I chose this case:
 
 ```text
-
+To check if the testcase works on the code or not.
 ```
 
 Input:
 
 ```text
-
+212.0
+F
+K
 ```
 
 Expected output:
 
 ```text
-
+373.15
 ```
 
 Actual output:
 
 ```text
-
+373.15
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +205,33 @@ Result:
 Why I chose this case:
 
 ```text
-
+To see if the code works correctly or not.
 ```
 
 Input:
 
 ```text
-
+0
+C
+K
 ```
 
 Expected output:
 
 ```text
-
+273.15
 ```
 
 Actual output:
 
 ```text
-
+273.15
 ```
 
 Result:
 
 ```text
-
+Pass
 ```
 
 ---
@@ -233,7 +241,7 @@ Result:
 Did you use AI for this problem?
 
 ```text
-
+No
 ```
 
 If yes, also complete:
@@ -251,7 +259,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,25 +284,25 @@ Not allowed:
 Who helped you?
 
 ```text
-
+-
 ```
 
 What did they help with?
 
 ```text
-
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing down and testing the code.
 ```
 
 Did you copy any code from another person?
 
 ```text
-
+No
 ```
 
 ---
@@ -305,10 +313,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. |  |
-| I understand my final code. |  |
-| I recorded the real OJ status. |  |
-| I did not copy AI-generated text directly into this file. |  |
-| I did not copy code from another person. |  |
-| If I received human help, I disclosed it in this file. |  |
-| I submitted the final code to the OJ by myself. |  |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
