@@ -115,9 +115,9 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: First, create 3 variables. temp is represented as Celsius and the input number. start is which unit you begin with and end is what you want the start unit to be.
-Step 2: Next, typing down the equations by converting start to be in Celsius unit before turning it into the end input unit.
-Step 3: Finally, checking and testing the code.
+Step 1: Create 3 variables. temp is represented as Celsius and the input number. start is which unit you begin with and end is what you want the start unit to be.
+Step 2: Typing down the equations by converting start to be in Celsius unit before turning it into the end input unit.
+Step 3: Testing and checking and testing the code to see if the calculations are corrct.
 ```
 
 ---

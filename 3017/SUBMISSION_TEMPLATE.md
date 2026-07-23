@@ -93,7 +93,7 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: First is creating an input variables.
+Step 1: Create an input variables to input the price of the food and drink.
 Step 2: Next calculate the price of the service charge. Then adding that to the VAT.
 Step 3: Fianlly, make the output in the a 2 place decimal.
 ```

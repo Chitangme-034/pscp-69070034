@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3024 / SurprisingVote
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+565999
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+0-15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants to know the total score of the three reviewers and the highest score among them to determine whether the review scores is suprising or not suprising.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Create 2 input variables to input the total score of the three reviewers and the highest score.
+Step 2: Calculate the lowest possible score based on the total and the highest score and compare the difference between the highest and the lowest score.
+Step 3: If the difference is more than 2, then it's suprising. If not then it's not suprising.
 ```
 
 ---
@@ -115,7 +115,9 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 2 input variables to input the total score of the three reviewers and the highest score.
+Step 2: Calculate the lowest possible score based on the total and the highest score and compare the difference between the highest and the lowest score.
+Step 3: If the difference is more than 2, then it's suprising. If not then it's not suprising.
 ```
 
 ---
@@ -135,31 +137,32 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To test if the output is the same as the one in the testcase.
 ```
 
 Input:
 
 ```text
-
+29
+10
 ```
 
 Expected output:
 
 ```text
-
+Not surprising
 ```
 
 Actual output:
 
 ```text
-
+Not surprising
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +170,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the output will be correct as predicted or not.
 ```
 
 Input:
 
 ```text
-
+20
+8
 ```
 
 Expected output:
 
 ```text
-
+Surprising
 ```
 
 Actual output:
 
 ```text
-
+Surprising
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +203,32 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the output will be correct as predicted or not.
 ```
 
 Input:
 
 ```text
-
+10
+2
 ```
 
 Expected output:
 
 ```text
-
+Not surprising
 ```
 
 Actual output:
 
 ```text
-
+Not surprising
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +238,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +256,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +281,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+A friend
 ```
 
 What did they help with?
 
 ```text
-
+Telling me about using max in the code
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing and testing the code after they told me what function to use.
 ```
 
 Did you copy any code from another person?
@@ -305,10 +310,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
