@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants to find the minimum number of walls that must be broken to travel from the input room number to room 1
 ```
 
 ---
