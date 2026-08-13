@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to find the minimum number of walls that must be broken to travel from the input room number to room 1
+The problem wants to find the minimum number of walls that must be broken to travel from the input room number to room 1.
 ```
 
 ---
@@ -93,9 +93,10 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Create an input variable.
+Step 2: Find and calculate the distance from the input room to the last room of that floor.
+Step 3: Check whether far is even or odd and determine the minimum number of walls.
+Step 4: Print the minimum number of walls.
 ```
 
 ---
@@ -115,7 +116,11 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create an input variable as the room number.
+Step 2: Set floor = 1 and while floor^2 < N, increase floor by 1.
+Step 3: Calculate the distance from the input room to the last room of that floor.
+Step 4: Check whether far is even or odd and determine the minimum number of walls.
+Step 5: Print the output
 ```
 
 ---
@@ -135,31 +140,31 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as the testcaase
 ```
 
 Input:
 
 ```text
-
+21
 ```
 
 Expected output:
 
 ```text
-
+8
 ```
 
 Actual output:
 
 ```text
-
+8
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +172,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as the testcaase
 ```
 
 Input:
 
 ```text
-
+11
 ```
 
 Expected output:
 
 ```text
-
+5
 ```
 
 Actual output:
 
 ```text
-
+5
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +204,31 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code could runs normally
 ```
 
 Input:
 
 ```text
-
+90
 ```
 
 Expected output:
 
 ```text
-
+18
 ```
 
 Actual output:
 
 ```text
-
+18
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +238,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +256,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +281,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+A friend
 ```
 
 What did they help with?
 
 ```text
-
+Explaining how to do the problem
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing the code down as they explained
 ```
 
 Did you copy any code from another person?
@@ -305,10 +310,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
 | I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
