@@ -15,25 +15,25 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3031/Ink
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+566013
 ```
 
 OJ status:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants to find the minimum number of seconds required for the spreading ink to reach each house based on its coordinates and the ink's spreading rate.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Create 2 input variables with a split and repeat the second input, before adding another 2 input variables
+Step 2: Calculate the distance, required circular area, and divide the area.
+Step 3: Print the output.
 ```
 
 ---
@@ -115,7 +115,10 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 2 input variables with a split for the ink expansion rate and number of houses.
+Step 2: Repeat with a loop and input create another 2 input variables with a split for each house's coordinates.
+Step 3: Calculate the distance from (0, 0) using x^2 + y^2, required circular area by 3.1416 × (x^2 + y^2), and time by divide the area with speed.
+Step 4: Round the result up to the next integer and print the output.
 ```
 
 ---
@@ -135,31 +138,41 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To check if the code runs correctly
 ```
 
 Input:
 
 ```text
-
+50 4
+0 0
+0 1
+30 30
+0 60
 ```
 
 Expected output:
 
 ```text
-
+0
+1
+114
+227
 ```
 
 Actual output:
 
 ```text
-
+0
+1
+114
+227
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +180,38 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test the code
 ```
 
 Input:
 
 ```text
-
+100 3
+10 0
+0 10
+20 20
 ```
 
 Expected output:
 
 ```text
-
+4
+4
+26
 ```
 
 Actual output:
 
 ```text
-
+4
+4
+26
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +219,41 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test the code
 ```
 
 Input:
 
 ```text
-
+200 4
+5 0
+0 20
+10 10
+30 40
 ```
 
 Expected output:
 
 ```text
-
+1
+7
+4
+40
 ```
 
 Actual output:
 
 ```text
-
+1
+7
+4
+40
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +263,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +281,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +306,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+A friend
 ```
 
 What did they help with?
 
 ```text
-
+Telling me about using import math in this code
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing the code down
 ```
 
 Did you copy any code from another person?
@@ -305,10 +335,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
