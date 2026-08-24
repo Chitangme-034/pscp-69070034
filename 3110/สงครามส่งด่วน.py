@@ -25,5 +25,5 @@ def main():
         print("Error")
         return
     price = base + weight * rate
-    print(price)
+    print(f"{price:.2f}")
 main()
