@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3111/BrickBridge
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+589953
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-30-60 minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem want us to build a bridge with exactly goal inches. "a" small bricks equals 1 inch and "b" large bricks equals 5 inches. We can use as many large bricks as possible first. Then use small bricks to fill the remaining length. If we don't have enough small bricks to reach exactly goal, output -1. Otherwise, output the number of small bricks used.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Add the three input variables.
+Step 2: Calculate the maximum number of large bricks and then calculate the remaining length.
+Step 3: Check if there are enough small bricks.
 ```
 
 ---
@@ -115,7 +115,12 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Add the three input variables: small_bricks, big_bricks, and goal.
+Step 2: Calculate the maximum number of big bricks.
+Step 3: If use_big is greater than big_bricks, then set use_big to be big_bricks.
+Step 4: Calculate the remaining length.
+Step 5: If remaining is greater than small_bricks, the output will be -1.
+Step 6: Otherwise, output is remaining.
 ```
 
 ---
@@ -135,31 +140,33 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To check if the code runs perfectly while testing.
 ```
 
 Input:
 
 ```text
-
+4
+1
+9
 ```
 
 Expected output:
 
 ```text
-
+4
 ```
 
 Actual output:
 
 ```text
-
+4
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +174,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To check if the code runs perfectly while testing.
 ```
 
 Input:
 
 ```text
-
+4
+1
+10
 ```
 
 Expected output:
 
 ```text
-
+-1
 ```
 
 Actual output:
 
 ```text
-
+-1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +208,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code works without the testcases that were given
 ```
 
 Input:
 
 ```text
-
+6
+2
+18
 ```
 
 Expected output:
 
 ```text
-
+-1
 ```
 
 Actual output:
 
 ```text
-
+-1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +244,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +262,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +287,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+-
 ```
 
 What did they help with?
 
 ```text
-
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing the code
 ```
 
 Did you copy any code from another person?
@@ -305,10 +316,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
