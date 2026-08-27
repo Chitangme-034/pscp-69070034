@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3115/Arcade of Time: Store Check
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+624527
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants to find how many stores are open at each requested time.
 ```
 
 ---
@@ -93,9 +93,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Create 2 input variables. Then, create the time array with 1,441 positions.
+Step 2: In a loop, create 2 input variables as start and stop.
+Step 3: Add 1 at start and subtract 1 at stop.
+Step 4: Calculate the running total for every minute.
+Step 5: Read the requested check times. For each requested time, get the number of stores open at that minute.
+Step 6: Store the results as strings and print all results on one line, separated by spaces.
 ```
 
 ---
@@ -115,7 +118,12 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 2 input variables: num and check. Then, create the time array with 1,441 positions.
+Step 2: In a loop, create 2 input variables as start and stop.
+Step 3: Add 1 at start and subtract 1 at stop.
+Step 4: Calculate the running total for every minute.
+Step 5: Read the requested check times. For each requested time, get the number of stores open at that minute.
+Step 6: Store the results as strings and print all results on one line, separated by spaces.
 ```
 
 ---
@@ -141,25 +149,29 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+3 5
+540 1020
+600 660
+1080 1200
+600 659 660 900 1300
 ```
 
 Expected output:
 
 ```text
-
+2 2 1 1 0
 ```
 
 Actual output:
 
 ```text
-
+2 2 1 1 0
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +179,34 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+2 3
+0 720
+500 1000
+100 700 800
 ```
 
 Expected output:
 
 ```text
-
+1 2 1
 ```
 
 Actual output:
 
 ```text
-
+1 2 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +214,35 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To see if the code runs perfectly fine
 ```
 
 Input:
 
 ```text
-
+3 5
+0 100
+50 200
+150 300
+0 49 50 150 299
 ```
 
 Expected output:
 
 ```text
-
+1 1 2 2 1
 ```
 
 Actual output:
 
 ```text
-
+1 1 2 2 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +252,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +270,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +295,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+A friend
 ```
 
 What did they help with?
 
 ```text
-
+Teaching, helping, and explaning the problem to me
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing the code after what my friend taught
 ```
 
 Did you copy any code from another person?
@@ -305,10 +324,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes|
