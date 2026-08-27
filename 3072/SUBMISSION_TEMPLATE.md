@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3072/A-E-I-O-U
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+589839
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us needs to count each vowel in the text and should only display vowels that appear in the text, along with their counts.
 ```
 
 ---
@@ -93,9 +93,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Create an input variable and convert it to lowercase.
+Step 2: Store the five vowels in a list then create a count list to store the number of each vowel.
+Step 3: Check each letter in the text. If the letter is a vowel, find its position in vowels.
+Step 4: Increase the corresponding value in count.
+Step 5: Go through all five vowels.
+Step 6: Print the vowel and its count if the count is greater than 0.
 ```
 
 ---
@@ -115,7 +118,12 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create an input variable and convert it to lowercase.
+Step 2: Store the five vowels(a, e, i, o, u) in a list then create a count list with five values initialized to 0.
+Step 3: Check each letter in the text. If the letter is a vowel, find its position in vowels.
+Step 4: Increase the corresponding value in count.
+Step 5: Go through all five vowels.
+Step 6: If count[index] is greater than 0, then print the vowel and its count.
 ```
 
 ---
@@ -135,31 +143,33 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+Worakarn
 ```
 
 Expected output:
 
 ```text
-
+a : 2
+o : 1
 ```
 
 Actual output:
 
 ```text
-
+a : 2
+o : 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +177,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+www.google.co.th
 ```
 
 Expected output:
 
 ```text
-
+e : 1
+o : 3
 ```
 
 Actual output:
 
 ```text
-
+e : 1
+o : 3
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +211,39 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code runs perfectly when the input is a sentence.
 ```
 
 Input:
 
 ```text
-
+I saw a stray cat in front of my house.
 ```
 
 Expected output:
 
 ```text
-
+a : 4
+e : 1
+i : 2
+o : 3
+u : 1
 ```
 
 Actual output:
 
 ```text
-
+a : 4
+e : 1
+i : 2
+o : 3
+u : 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +253,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +271,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +296,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+-
 ```
 
 What did they help with?
 
 ```text
-
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing and figuring out the code
 ```
 
 Did you copy any code from another person?
@@ -305,10 +325,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
 | I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
