@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3111/สหกรณ์โรงเรียน
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+624504
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-30-60 minutes
+1-3 hours
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to calculate the total price of all items and round the final price to 2 decimal places using round half up.
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: Create 2 input variables and set the total price to 0.
+Step 2: Read each item's price and add it to total. Then check the membership status.
+Step 3: Round the final price to 2 decimal places.
 ```
 
 ---
@@ -115,7 +115,10 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 2 input variables: member and n. Then, set the total price to 0.
+Step 2: Repeat n times for the input price and add price to total.
+Step 3: If for if member == "Y", calculate the final price with a 5% discount. Elif for if member == "N" and total >= 500, calculate the final price with a 3% discount. Else for oterwise, keep the total price unchanged.
+Step 4: Round the final price to 2 decimal places using ROUND_HALF_UP, then print it.
 ```
 
 ---
@@ -141,25 +144,29 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+Y
+3
+20
+45.5
+10
 ```
 
 Expected output:
 
 ```text
-
+71.73
 ```
 
 Actual output:
 
 ```text
-
+71.73
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +174,35 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+N
+3
+200
+200
+100
 ```
 
 Expected output:
 
 ```text
-
+485.00
 ```
 
 Actual output:
 
 ```text
-
+485.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +210,33 @@ Pass / Not Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+Y
+1
+125.25
 ```
 
 Expected output:
 
 ```text
-
+118.99
 ```
 
 Actual output:
 
 ```text
-
+118.99
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +246,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +264,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -276,19 +289,19 @@ Not allowed:
 Who helped you?
 
 ```text
-
+A friend
 ```
 
 What did they help with?
 
 ```text
-
+Explaining, teaching, and helping me calculate for the code
 ```
 
 What did you still do by yourself?
 
 ```text
-
+Writing down how to calculate and trying the code
 ```
 
 Did you copy any code from another person?
@@ -305,10 +318,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
