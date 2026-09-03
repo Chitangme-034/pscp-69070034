@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3135/ของขวัญและขโมย
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+638909
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to simulate the movement of the gift around the people and count how many different people get to examine it.
 ```
 
 ---
@@ -93,12 +93,14 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
-Step 6: 
+Step 1: Create 3 input variables.
+Step 2: Set the current person at 1. Set the count to 1.
+Step 3: Create an if command for person 1 if they are the theif.
+Step 4: If not, then create a while loop command inside.
+Step 5: Move forward by k people.
+Step 6: Check if the gift returns to person 1 and check if the current person is the thief.
+Step 7: Increase the count when a new person examines the gift.
+Step 8: Stop when the gift returns to person 1 or reaches the thief and print count.
 ```
 
 ---
@@ -118,7 +120,11 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 3 input variables. n for the number of people in the group, k for the number of people the gift moves forward each time it is passed, and t for the number of people who is the theif.
+Step 2: Set current as the current person at 1. Set the count to 1.
+Step 3: Create an if command for person 1. If t equals 1, then the output is 1. If not, the create a while loop command inside and calculate the next person using the circular movement.
+Step 4: Create a second if command after. If current equals 1, print count.
+Step 5: Increase count by 1 and add another if command. If current equals to t, print count.
 ```
 
 ---
@@ -144,19 +150,19 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+6 4 2
 ```
 
 Expected output:
 
 ```text
-
+3
 ```
 
 Actual output:
 
 ```text
-
+3
 ```
 
 Result:
@@ -170,25 +176,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+5 4 3
 ```
 
 Expected output:
 
 ```text
-
+4
 ```
 
 Actual output:
 
 ```text
-
+4
 ```
 
 Result:
@@ -202,25 +208,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To check if the code's answer is correct
 ```
 
 Input:
 
 ```text
-
+10 5 2
 ```
 
 Expected output:
 
 ```text
-
+2
 ```
 
 Actual output:
 
 ```text
-
+2
 ```
 
 Result:
@@ -285,13 +291,13 @@ A friend
 What did they help with?
 
 ```text
-Teaching, helping, and explaning the problem to me
+Telling me what is the issue in my code
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code after what my friend taught
+Writing and fix the code
 ```
 
 Did you copy any code from another person?
@@ -314,4 +320,4 @@ Write `Yes` for each statement.
 | I did not copy AI-generated text directly into this file. | Yes |
 | I did not copy code from another person. | Yes |
 | If I received human help, I disclosed it in this file. | Yes |
-| I submitted the final code to the OJ by myself. | Yes|
+| I submitted the final code to the OJ by myself. | Yes |
