@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3160/หาจำนวนเฉพาะ
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+635569
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+0-15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to find all prime numbers within the given input range and count how many prime numbers there are.
 ```
 
 ---
@@ -93,12 +93,14 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
-Step 6: 
+Step 1: Create a split input variable.
+Step 2: Set count to be 0.
+Step 3: Create a loop and if command.
+Step 4: Ignore numbers smaller than 2.
+Step 5: Assume the current number is prime.
+Step 6: Try dividing the number by numbers from 2 up to one less than itself. If it can be divided evenly, it is not prime.
+Step: 7: If it is still prime, add it to the result and increase count by 1. If at least one prime number is found, display the prime numbers.
+Step 8: Print all the total prime numbers.
 ```
 
 ---
@@ -118,7 +120,15 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create a split input variable for start as the beginning of the range and end as the end of the range.
+Step 2: Set count to be 0 and set result as an empty string.
+Step 3: Create a loop for number to be in the range of start and end.
+Step 4: Create a if command inside. If number is less than 2, then skip. Then set prime as True.
+Step 5: Create a second loop inside for divisor to start from 2 to number - 1.
+Step 6: Create a second if command inside. If number divides(%) with divisor equals 0, set prime as False and stop checking the number.
+Step: 7: Create a third if command outside the second loop. If prime is True, then add number to result and increase by 1.
+Step 8: Create a forth if command outside the first loop. If count is more than 0, then print the result.
+Step 9: Print "Total primes: " and count.
 ```
 
 ---
@@ -144,19 +154,21 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+1 10
 ```
 
 Expected output:
 
 ```text
-
+2 3 5 7
+Total primes: 4
 ```
 
 Actual output:
 
 ```text
-
+2 3 5 7
+Total primes: 4
 ```
 
 Result:
@@ -170,25 +182,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+32 36
 ```
 
 Expected output:
 
 ```text
-
+Total primes: 0
 ```
 
 Actual output:
 
 ```text
-
+Total primes: 0
 ```
 
 Result:
@@ -202,25 +214,27 @@ Pass
 Why I chose this case:
 
 ```text
-
+To see if the code displays the correct answers
 ```
 
 Input:
 
 ```text
-
+50 75
 ```
 
 Expected output:
 
 ```text
-
+53 59 61 67 71 73
+Total primes: 6
 ```
 
 Actual output:
 
 ```text
-
+53 59 61 67 71 73
+Total primes: 6
 ```
 
 Result:
@@ -285,7 +299,7 @@ A friend
 What did they help with?
 
 ```text
-Teaching, helping, and explaning the problem to me
+Teaching, helping, and explaining how to do this code
 ```
 
 What did you still do by yourself?
@@ -314,4 +328,4 @@ Write `Yes` for each statement.
 | I did not copy AI-generated text directly into this file. | Yes |
 | I did not copy code from another person. | Yes |
 | If I received human help, I disclosed it in this file. | Yes |
-| I submitted the final code to the OJ by myself. | Yes|
+| I submitted the final code to the OJ by myself. | Yes |
