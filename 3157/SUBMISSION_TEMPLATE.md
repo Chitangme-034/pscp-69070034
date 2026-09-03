@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3157/เกมสะสมแต้ม
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+635459
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+0-15 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants us to simulate a game score by the player will start with 0. N is the number of actions. + adds 10 points, while - subtracts 5 points. After all commands are complete, print the final score.
 ```
 
 ---
@@ -93,12 +93,11 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
-Step 6: 
+Step 1: Create an input variable for the number of actions.
+Step 2: Set a score.
+Step 3: Create a loop for the number of action.
+Step 4: Create an input variable and create a if command.
+Step 5: Print the final score.
 ```
 
 ---
@@ -118,7 +117,11 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create an input variable for the number of actions as N.
+Step 2: Set the initial score to 0.
+Step 3: Create a loop in N range.
+Step 4: Create an input variable for command and create a if command. If command is +, then calculate score = score + 10. If command is -, calculate score = score - 5.
+Step 5: After processing all commands, print the final score.
 ```
 
 ---
@@ -144,19 +147,24 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+5
++
++
+-
++
++
 ```
 
 Expected output:
 
 ```text
-
+35
 ```
 
 Actual output:
 
 ```text
-
+35
 ```
 
 Result:
@@ -170,25 +178,33 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the output is the same as what I predicted.
 ```
 
 Input:
 
 ```text
-
+8 
++
++
++
+-
++
++
+-
++
 ```
 
 Expected output:
 
 ```text
-
+50
 ```
 
 Actual output:
 
 ```text
-
+50
 ```
 
 Result:
@@ -202,25 +218,27 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the output can display a negative number.
 ```
 
 Input:
 
 ```text
-
+2
+-
+-
 ```
 
 Expected output:
 
 ```text
-
+-10
 ```
 
 Actual output:
 
 ```text
-
+-10
 ```
 
 Result:
@@ -254,7 +272,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -279,19 +297,19 @@ Not allowed:
 Who helped you?
 
 ```text
-A friend
+-
 ```
 
 What did they help with?
 
 ```text
-Teaching, helping, and explaning the problem to me
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code after what my friend taught
+Writing the code and calculating for the testcase
 ```
 
 Did you copy any code from another person?
@@ -314,4 +332,4 @@ Write `Yes` for each statement.
 | I did not copy AI-generated text directly into this file. | Yes |
 | I did not copy code from another person. | Yes |
 | If I received human help, I disclosed it in this file. | Yes |
-| I submitted the final code to the OJ by myself. | Yes|
+| I submitted the final code to the OJ by myself. | Yes |
