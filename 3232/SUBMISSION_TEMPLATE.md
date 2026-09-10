@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+649220/กบน้อยกระโดด
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+649220
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants to find the minimum number of jumps needed for the frog to reach a total distance of at least Y.
 ```
 
 ---
@@ -93,12 +93,13 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
-Step 6: 
+Step 1: Create 2 input variables, connected by split.
+Step 2: Set total distance and jump count to 0.
+Step 3: Create a while loop condition. Keep jumping while the jump distance is greater than 0.
+Step 4: Add the current jump distance to the total.
+Step 5: Increase the jump count.
+Step 6: Create a if condition inside the loop. If total distance reaches Y, print the jump count. Otherwise, reduce the next jump distance by 2. And if the frog runs out of jump distance, print -1.
+Step 7: Print the output.
 ```
 
 ---
@@ -118,7 +119,13 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 2 input variables, x and y, connected by split.
+Step 2: Set total distance and jump count to 0.
+Step 3: Create a while loop condition. Keep jumping while the jump distance is greater than 0.
+Step 4: Add the current jump distance to the total.
+Step 5: Increase the jump count.
+Step 6: Create a if condition inside the loop. If total distance reaches Y, print the jump count. Otherwise, reduce the next jump distance by 2. And if the frog runs out of jump distance, print -1.
+Step 7: Print the output.
 ```
 
 ---
@@ -144,19 +151,19 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+6 10
 ```
 
 Expected output:
 
 ```text
-
+2
 ```
 
 Actual output:
 
 ```text
-
+2
 ```
 
 Result:
@@ -170,25 +177,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+5 12
 ```
 
 Expected output:
 
 ```text
-
+-1
 ```
 
 Actual output:
 
 ```text
-
+-1
 ```
 
 Result:
@@ -202,25 +209,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To see if the code runs perfectly
 ```
 
 Input:
 
 ```text
-
+50 34
 ```
 
 Expected output:
 
 ```text
-
+1
 ```
 
 Actual output:
 
 ```text
-
+1
 ```
 
 Result:
@@ -314,4 +321,4 @@ Write `Yes` for each statement.
 | I did not copy AI-generated text directly into this file. | Yes |
 | I did not copy code from another person. | Yes |
 | If I received human help, I disclosed it in this file. | Yes |
-| I submitted the final code to the OJ by myself. | Yes|
+| I submitted the final code to the OJ by myself. | Yes |
