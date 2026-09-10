@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3233/สลากกินแบ่ง
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+649615
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem wants to checks how closely the purchased lottery ticket matches the winning ticket and awards the highest applicable prize.
 ```
 
 ---
@@ -93,12 +93,11 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
-Step 6: 
+Step 1: Create two split input variables.
+Step 2: Compare the letter and the 5-digit number.
+Step 3: Check the prize conditions in order from highest to lowest.
+Step 4: Give only the first matching prize.
+Step 5: If none of the conditions match, the prize output is 0.
 ```
 
 ---
@@ -118,7 +117,17 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create two split input variables for the winning ticket's letter and its number and the purchased ticket's letter and its number.
+Step 2: Create an if condition:
+            - If both the letter and all 5 digits are the same, give 1,000,000.
+            - Elif all 5 digits are the same, give 100,000.
+            - Elif the last 3 digits and the letter are the same, give 2,000.
+            - Elif the last 2 digits and the letter are the same, give 1,000.
+            - Elif the last 3 digits are the same but the letter is different, give 200.
+            - Elif the last 2 digits are the same but the letter is different, give 100.
+            - Elif only the letter is the same, give 20.
+            - Otherwise/Else, give 0.
+Step 3: Print the output.
 ```
 
 ---
@@ -144,19 +153,20 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+A 12345
+A 12345
 ```
 
 Expected output:
 
 ```text
-
+1000000
 ```
 
 Actual output:
 
 ```text
-
+1000000
 ```
 
 Result:
@@ -170,25 +180,26 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+A 12345
+A 99945
 ```
 
 Expected output:
 
 ```text
-
+1000
 ```
 
 Actual output:
 
 ```text
-
+1000
 ```
 
 Result:
@@ -202,25 +213,26 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+A 12345
+B 99999
 ```
 
 Expected output:
 
 ```text
-
+0
 ```
 
 Actual output:
 
 ```text
-
+0
 ```
 
 Result:
@@ -285,13 +297,13 @@ A friend
 What did they help with?
 
 ```text
-Teaching, helping, and explaning the problem to me
+Help explan and check my code
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code after what my friend taught
+Writing the code
 ```
 
 Did you copy any code from another person?
@@ -314,4 +326,4 @@ Write `Yes` for each statement.
 | I did not copy AI-generated text directly into this file. | Yes |
 | I did not copy code from another person. | Yes |
 | If I received human help, I disclosed it in this file. | Yes |
-| I submitted the final code to the OJ by myself. | Yes|
+| I submitted the final code to the OJ by myself. | Yes |
