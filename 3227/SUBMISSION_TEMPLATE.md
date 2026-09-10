@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3227/ไพ่ 44 ใบ
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+649133
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+The problem needs to convert a card code into its full card name.
 ```
 
 ---
@@ -93,12 +93,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
-Step 6: 
+Step 1: Create 2 input variables as the card code.
+Step 2: Convert the input to uppercase so lowercase input also works.
+Step 3: Separate the value and suit.
+Step 4: Convert the card value and the suit to its full name.
+Step 5: Combine them with "of".
+Step 6: Print the output.
 ```
 
 ---
@@ -118,7 +118,12 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 2 input variables as the card code.
+Step 2: Convert the input to uppercase so lowercase input also works.
+Step 3: Get the card value from the beginning of the code and get the last character as the suit.
+Step 4: Create a if condition. Check the card value as the following: A = ace, J = jack, Q = queen, K = king. If not any of the followings, then the use the input number instead.
+Step 5: Create a if condition. Check the card suit as the following: D = diamonds, H = hearts, S = spades, C = clubs.
+Step 6: Print the output by combining the value name, "of", and suit name together.
 ```
 
 ---
@@ -138,25 +143,25 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-To test if the code's output is the same as in the testcases.
+To make sure the code is correct from the given testcase.
 ```
 
 Input:
 
 ```text
-
+QS
 ```
 
 Expected output:
 
 ```text
-
+queen of spades
 ```
 
 Actual output:
 
 ```text
-
+queen of spades
 ```
 
 Result:
@@ -170,25 +175,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test is the code run perfectly.
 ```
 
 Input:
 
 ```text
-
+AS
 ```
 
 Expected output:
 
 ```text
-
+ace of spades
 ```
 
 Actual output:
 
 ```text
-
+ace of spades
 ```
 
 Result:
@@ -202,25 +207,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test is the code run perfectly.
 ```
 
 Input:
 
 ```text
-
+KH
 ```
 
 Expected output:
 
 ```text
-
+king of hearts
 ```
 
 Actual output:
 
 ```text
-
+king of hearts
 ```
 
 Result:
@@ -254,7 +259,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -279,19 +284,19 @@ Not allowed:
 Who helped you?
 
 ```text
-A friend
+-
 ```
 
 What did they help with?
 
 ```text
-Teaching, helping, and explaning the problem to me
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code after what my friend taught
+Writing the code down
 ```
 
 Did you copy any code from another person?
@@ -314,4 +319,4 @@ Write `Yes` for each statement.
 | I did not copy AI-generated text directly into this file. | Yes |
 | I did not copy code from another person. | Yes |
 | If I received human help, I disclosed it in this file. | Yes |
-| I submitted the final code to the OJ by myself. | Yes|
+| I submitted the final code to the OJ by myself. | Yes |
