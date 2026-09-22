@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3296/RGB Mixed
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+658158
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to checks how closely the purchased lottery ticket matches the winning ticket and awards the highest applicable prize.
+The problem wants to calculate the average of each RGB channel from two colors to produce the mixed color.
 ```
 
 ---
@@ -93,11 +93,10 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
+Step 1: Create input variables for the first color.
+Step 2: Create input variables for the second color.
+Step 3: Calculate the average of two red values, two green values, and two blue values.
+Step 4: Print the three mixed RGB values.
 ```
 
 ---
@@ -117,7 +116,10 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create input variable for the R, G, and B values of the first color.
+Step 2: Create input variable for the R, G, and B values of the second color.
+Step 3: Calculate the average of two red values, two green values, and two blue values.
+Step 4: Print the mixed R, G, and B values separated by spaces.
 ```
 
 ---
@@ -143,19 +145,20 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+255 0 0
+0 0 255
 ```
 
 Expected output:
 
 ```text
-
+127 0 127
 ```
 
 Actual output:
 
 ```text
-
+127 0 127
 ```
 
 Result:
@@ -169,25 +172,26 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+0 255 0
+0 0 255
 ```
 
 Expected output:
 
 ```text
-
+0 127 127
 ```
 
 Actual output:
 
 ```text
-
+0 127 127
 ```
 
 Result:
@@ -201,25 +205,26 @@ Pass
 Why I chose this case:
 
 ```text
-
+To see if the code will work
 ```
 
 Input:
 
 ```text
-
+255 255 255
+255 255 255
 ```
 
 Expected output:
 
 ```text
-
+255 255 255
 ```
 
 Actual output:
 
 ```text
-
+255 255 255
 ```
 
 Result:
@@ -284,7 +289,7 @@ A friend
 What did they help with?
 
 ```text
-Help explan and check my code
+Help explain and tell me what to do in the code
 ```
 
 What did you still do by yourself?
