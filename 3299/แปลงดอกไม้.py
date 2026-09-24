@@ -1,6 +1,6 @@
 """Flower Field"""
 def main():
-    """Find the band containing the last planted cell."""
+    """Last planted flower"""
     l, n = map(int, input().split())
     diagonal = 1
     total = 1

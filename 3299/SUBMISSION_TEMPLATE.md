@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3299/แปลงดอกไม้
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-
+662755
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-
+30-60 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to checks how closely the purchased lottery ticket matches the winning ticket and awards the highest applicable prize.
+The problem wants to determine which diagonal band contains the N-th planted cell.
 ```
 
 ---
@@ -93,11 +93,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
+Step 1: Create 2 split input variables.
+Step 2: Set the diagonal number and total as 1.
+Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
+Step 4: The current diagonal contains the N-th cell.
+Step 5: Convert the diagonal number into the band number.
+Step 6: Print the band number.
 ```
 
 ---
@@ -117,7 +118,12 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create 2 split input variables.
+Step 2: Set the diagonal number and total as 1.
+Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
+Step 4: The current diagonal contains the N-th cell.
+Step 5: Convert the diagonal number into the band number.
+Step 6: Print the band number.
 ```
 
 ---
@@ -143,19 +149,19 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+1 17
 ```
 
 Expected output:
 
 ```text
-
+6
 ```
 
 Actual output:
 
 ```text
-
+6
 ```
 
 Result:
@@ -169,25 +175,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-
+3 29
 ```
 
 Expected output:
 
 ```text
-
+3
 ```
 
 Actual output:
 
 ```text
-
+3
 ```
 
 Result:
@@ -201,25 +207,25 @@ Pass
 Why I chose this case:
 
 ```text
-
+To see if the code works
 ```
 
 Input:
 
 ```text
-
+4 40
 ```
 
 Expected output:
 
 ```text
-
+3
 ```
 
 Actual output:
 
 ```text
-
+3
 ```
 
 Result:
@@ -284,13 +290,13 @@ A friend
 What did they help with?
 
 ```text
-Help explan and check my code
+Telling me how to do the code
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code
+Writing the code and trying to understand it
 ```
 
 Did you copy any code from another person?
