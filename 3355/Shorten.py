@@ -22,7 +22,6 @@ def main():
                 result.append(str(start))
             else:
                 result.append(str(start) + "-" + str(end))
-
             start = num
             end = num
     print(", ".join(result))

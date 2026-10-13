@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3299/แปลงดอกไม้
+3355/Shorten
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-662755
+678221
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to determine which diagonal band contains the N-th planted cell.
+The problem receives increasing numbers per line until -1 is inputed. It combines consecutive numbers into a range using "-" and separates each range with a "," and a space.
 ```
 
 ---
@@ -93,12 +93,11 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a list box and then an input variable.
+Step 2: Create an if condition to print nothing when the input is -1.
+Step 3: Create a loop condition. When the next number is not consecutive, save the previous range.
+Step 4: After receiving -1, save the final range.
+Step 5: Print the ranges separated by ",".
 ```
 
 ---
@@ -118,12 +117,15 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a list box and then an input variable and set it as both start and end.
+Step 2: Create an if condition to print nothing when the input is -1.
+Step 3: Create a loop condition when inputting the next number repeatedly until -1 is entered.
+Step 4: Create if conditions inside the loop. If the number equals end + 1, update end to that number because it continues the current range. Otherwise:
+- If start equals end, add start to the result as a single number.
+- If start does not equal end, add the range start-end to the result.
+- Set both start and end to the new number.
+Step 5: Create another if conditions below. If start equals end, save the single number. Otherwise, save the range start-end.
+Step 6: Print the ranges separated by ",".
 ```
 
 ---
@@ -149,19 +151,26 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-1 17
+1
+2
+3
+5
+7
+9
+10
+-1
 ```
 
 Expected output:
 
 ```text
-6
+1-3, 5, 7, 9-10
 ```
 
 Actual output:
 
 ```text
-6
+1-3, 5, 7, 9-10
 ```
 
 Result:
@@ -181,19 +190,24 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-3 29
+1
+2
+3
+4
+5
+-1
 ```
 
 Expected output:
 
 ```text
-3
+1-5
 ```
 
 Actual output:
 
 ```text
-3
+1-5
 ```
 
 Result:
@@ -213,19 +227,23 @@ To see if the code works
 Input:
 
 ```text
-4 40
+35
+36
+37
+40
+50
 ```
 
 Expected output:
 
 ```text
-3
+35-37, 40, 50
 ```
 
 Actual output:
 
 ```text
-3
+35-37, 40, 50
 ```
 
 Result:
@@ -290,7 +308,7 @@ A friend
 What did they help with?
 
 ```text
-Telling me how to do the code
+Explaining to me what's wrong with me code
 ```
 
 What did you still do by yourself?
