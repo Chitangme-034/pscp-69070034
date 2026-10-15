@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3299/แปลงดอกไม้
+3477/Pad Thai
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-662755
+683168
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to determine which diagonal band contains the N-th planted cell.
+The problem wants us to input the ingredients for making Pad Thai until the input is "Cook" before input the flavors until the input is "End". Then print what the chef says about the Pad Thai.
 ```
 
 ---
@@ -93,12 +93,13 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a set that contains the given ingredients for the Pad Thai.
+Step 2: Create a set that contains the three required flavors.
+Step 3: Create a loop for inputing ingredient until the input is "Cook" and store them in a set.
+Step 4: Create another loop for inputing flavors until the input is "End" and store them in another set.
+Step 5: Create a Boolean variable named invalid and set it to False.
+Step 6: Use a for loop to check each ingredient. If an ingredient is not in the allowed ingredient set, set invalid to True.
+Step 7: Create an if condition to check the ingredients and flavors in the given orders and print the output.
 ```
 
 ---
@@ -118,12 +119,17 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create two sets each for the allowed ingredients and flavors.
+Step 2: Create two empty sets for the ingredients used and the flavors used.
+Step 3: Create a loop for inputing ingredient until the input is "Cook" and each ingredient to the set.
+Step 4: Create another loop for inputing flavors until the input is "End" and each flavor to the set.
+Step 5: Set invalid to False.
+Step 6: Use a loop to check every ingredient in ingredients. If an ingredient is not in the allowed ingredient set, set invalid to True.
+Step 7: Create an if condition to check the ingredients and flavors in the given orders:
+- If invalid is True, print "This is not Pad Thai!!!".
+- Elif the ingredients used do not contain all 11 required ingredients, print "This is bad!".
+- Elif the flavors used are not exactly Sweet, Sour, and Salty, print "Not Bad...".
+- Else, print "Delicious!".
 ```
 
 ---
@@ -149,19 +155,32 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-1 17
+Pad Thai Sauce
+Tofu
+Pickle Turnip
+Shrimp
+Bean Sprouts
+Noodle
+Chives
+Lime
+Egg
+Peanuts
+Cook
+Sweet
+Sour
+End
 ```
 
 Expected output:
 
 ```text
-6
+This is bad!
 ```
 
 Actual output:
 
 ```text
-6
+This is bad!
 ```
 
 Result:
@@ -181,19 +200,35 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-3 29
+Pad Thai Sauce
+Tofu
+Pickle Turnip
+Shrimp
+Bean Sprouts
+Noodle
+Chives
+Lime
+Egg
+Oil
+Peanuts
+Cook
+Sweet
+Sour
+Salty
+Bitter
+End
 ```
 
 Expected output:
 
 ```text
-3
+Not Bad...
 ```
 
 Actual output:
 
 ```text
-3
+Not Bad...
 ```
 
 Result:
@@ -213,19 +248,25 @@ To see if the code works
 Input:
 
 ```text
-4 40
+Pickle Turnip
+Tofu
+Lime
+Shrimp
+Cook
+Sour
+End
 ```
 
 Expected output:
 
 ```text
-3
+This is bad!
 ```
 
 Actual output:
 
 ```text
-3
+This is bad!
 ```
 
 Result:
@@ -290,13 +331,13 @@ A friend
 What did they help with?
 
 ```text
-Telling me how to do the code
+Telling me about using invalid for the loop part
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code and trying to understand it
+Writing and figuring out how to use the invalid like what my friend suggested
 ```
 
 Did you copy any code from another person?

@@ -19,7 +19,11 @@ def main():
         if flavor == "End":
             break
         flavors.add(flavor)
-    if not ingredients.issubset(allowed):
+    invalid = False
+    for item in ingredients:
+        if item not in allowed:
+            invalid = True
+    if invalid:
         print("This is not Pad Thai!!!")
     elif ingredients != allowed:
         print("This is bad!")
