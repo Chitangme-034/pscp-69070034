@@ -93,12 +93,15 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: 
-Step 2: 
-Step 3: 
-Step 4: 
-Step 5: 
-Step 6: 
+Step 1: Create an input variable for how many cats and foxes together.
+Step 2: Create two empty dictionaries for cats and foxes.
+Step 3: Create a loop to check each dictionary and extract the name and identifier.
+Step 4: Create an if condition. If the identifier starts with "Cat", store the character in cats dictionary. If it starts with "Fox", store the character in foxes dictionary.
+Step 5: Combine the names from both dictionaries to check whether "Garfield" and "Fubuki" already exist.
+Step 6: Add "Garfield" as "Cat01" if the name is absent from the input and add "Fubuki" as "Fox01" if the name is absent from the input.
+Step 7: Print the number of cats and foxes.
+Step 8: Sort the cats and foxes separately by converting the numeric part of each identifier to an integer.
+Step 9: Print each character's name followed by its identifier, listing cats before foxes.
 ```
 
 ---
@@ -118,7 +121,13 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+Step 1: Create an input variable for how many cats and foxes together.
+Step 2: Create two empty dictionaries for cats and foxes.
+Step 3: Create a loop to check the input dictionaries and separate the cats and foxes into two dictionaries using their identifiers.
+Step 4: Check whether "Garfield" and "Fubuki" already exist in either dictionary. If absent, add them with their default identifiers, Cat01 and Fox01, respectively.
+Step 5: Count and display the total number of cats and foxes.
+Step 6: Sort each dictionary by converting the numeric part of its identifier to an integer.
+Step 7: Print the cats first, followed by the foxes, showing each character's name and identifier.
 ```
 
 ---
@@ -144,19 +153,40 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+5
+{"Chi" : "Cat06"}
+{"Tom" : "Cat05"}
+{"Shiro" : "Fox02"}
+{"Senko" : "Fox10"}
+{"Chocola" : "Cat03"}
 ```
 
 Expected output:
 
 ```text
-
+Cat : 4
+Fox : 3
+Garfield : Cat01
+Chocola : Cat03
+Tom : Cat05
+Chi : Cat06
+Fubuki : Fox01
+Shiro : Fox02
+Senko : Fox10
 ```
 
 Actual output:
 
 ```text
-
+Cat : 4
+Fox : 3
+Garfield : Cat01
+Chocola : Cat03
+Tom : Cat05
+Chi : Cat06
+Fubuki : Fox01
+Shiro : Fox02
+Senko : Fox10
 ```
 
 Result:
@@ -176,19 +206,42 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-
+7
+{"Fubuki" : "Fox05"}
+{"Shiro" : "Fox01"}
+{"Garfield" : "Fox06"}
+{"Kin" : "Cat05"}
+{"Okayu" : "Cat03"}
+{"Kuro" : "Fox02"}
+{"Tom" : "Cat07"}
 ```
 
 Expected output:
 
 ```text
-
+Cat : 3
+Fox : 4
+Okayu : Cat03
+Kin : Cat05
+Tom : Cat07
+Shiro : Fox01
+Kuro : Fox02
+Fubuki : Fox05
+Garfield : Fox06
 ```
 
 Actual output:
 
 ```text
-
+Cat : 3
+Fox : 4
+Okayu : Cat03
+Kin : Cat05
+Tom : Cat07
+Shiro : Fox01
+Kuro : Fox02
+Fubuki : Fox05
+Garfield : Fox06
 ```
 
 Result:
@@ -208,19 +261,51 @@ To see if the code works
 Input:
 
 ```text
-
+10
+{"Yuki" : "Fox08"}
+{"Fubuki" : "Fox05"}
+{"Tom" : "Cat07"}
+{"Kin" : "Cat05"}
+{"Shiro" : "Fox01"}
+{"Kuro" : "Fox02"}
+{"Okayu" : "Cat03"}
+{"Garfield" : "Fox06"}
+{"Lucy" : "Cat13"}
+{"Aikiko" : "Cat06"}
 ```
 
 Expected output:
 
 ```text
-
+Cat : 5
+Fox : 5
+Okayu : Cat03
+Kin : Cat05
+Aikiko : Cat06
+Tom : Cat07
+Lucy : Cat13
+Shiro : Fox01
+Kuro : Fox02
+Fubuki : Fox05
+Garfield : Fox06
+Yuki : Fox08
 ```
 
 Actual output:
 
 ```text
-
+Cat : 5
+Fox : 5
+Okayu : Cat03
+Kin : Cat05
+Aikiko : Cat06
+Tom : Cat07
+Lucy : Cat13
+Shiro : Fox01
+Kuro : Fox02
+Fubuki : Fox05
+Garfield : Fox06
+Yuki : Fox08
 ```
 
 Result:
