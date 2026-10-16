@@ -15,7 +15,7 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3299/แปลงดอกไม้
+
 ```
 
 OJ submission ID, if submitted:
