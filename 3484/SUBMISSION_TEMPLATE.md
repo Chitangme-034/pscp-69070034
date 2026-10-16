@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-
+3484/หุ่นยนต์เคาะเสียงกระเบื้อง
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-662755
+679767
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-30-60 minutes
+1-3 hours
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to determine which diagonal band contains the N-th planted cell.
+The problem wants to calculate the number of defective tiles, the total defective points in each row and column, the overall number of defective tiles, total defective points, and total penalty based on the penalty per point.
 ```
 
 ---
@@ -93,12 +93,13 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a split input for the grid size and the penalty per point.
+Step 2: Check the defective sound point values for all N x N tiles and store them in an empty list.
+Step 3: For each row, count the number of defective tiles and calculate the total defective points.
+Step 4: Print the row values, the defective tile count, and the defective point count and add the overall totals.
+Step 5: For each column, count the number of the defective tiles and print the results before calculating and printing the total defective points.
+Step 6: Print the total number of defective tiles, the total defective points, and the total penalty calculated by multiplying the total defective points by the penalty per point.
+Step 7: Print the total penalty to two decimal places.
 ```
 
 ---
@@ -118,12 +119,16 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a split input for the grid size(n) and the penalty per point(penalty).
+Step 2: Create an empty list to store the tile data.
+Step 3: Check the n rows of tile values and store them in the list.
+Step 4: Set the total_tiles and total_points to 0.
+Step 5: Create a loop for each row. Inside, set row_tiles and row_points to 0. 
+Step 6: Create an if condition. For each tile value, increase row_tiles by 1 if the value is greater than 0.
+Step 7: Add each tile value to row_points and add the row totals to total_tiles and total_points.
+Step 8: Print the row values, row_tiles, and row_points.
+Step 9: For each column, count and print the number of defective tiles. Then, for each column, calculate and print the total defective points.
+Step 10: Calculate the total penalty as total_points * P and print out the total_tiles, total_points, and the total penalty formatted to two decimal places.
 ```
 
 ---
@@ -149,19 +154,41 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-1 17
+6 500
+0 4 3 0 1 0
+0 5 2 0 1 0
+0 1 0 0 0 0
+4 0 0 0 0 0
+5 1 0 1 0 0
+0 0 0 2 0 0
 ```
 
 Expected output:
 
 ```text
-6
+0 4 3 0 1 0 3 8
+0 5 2 0 1 0 3 8
+0 1 0 0 0 0 1 1
+4 0 0 0 0 0 1 4
+5 1 0 1 0 0 3 7
+0 0 0 2 0 0 1 2
+2 4 2 2 2 0
+9 11 5 3 2 0
+12 30 15000.00
 ```
 
 Actual output:
 
 ```text
-6
+0 4 3 0 1 0 3 8
+0 5 2 0 1 0 3 8
+0 1 0 0 0 0 1 1
+4 0 0 0 0 0 1 4
+5 1 0 1 0 0 3 7
+0 0 0 2 0 0 1 2
+2 4 2 2 2 0
+9 11 5 3 2 0
+12 30 15000.00
 ```
 
 Result:
@@ -181,19 +208,32 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-3 29
+3 100
+0 0 0
+0 0 0
+0 0 0
 ```
 
 Expected output:
 
 ```text
-3
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0
+0 0 0
+0 0 0.00
 ```
 
 Actual output:
 
 ```text
-3
+0 0 0 0 0
+0 0 0 0 0
+0 0 0 0 0
+0 0 0
+0 0 0
+0 0 0.00
 ```
 
 Result:
@@ -213,19 +253,32 @@ To see if the code works
 Input:
 
 ```text
-4 40
+3 100
+1 0 2
+0 3 0
+4 1 0
 ```
 
 Expected output:
 
 ```text
-3
+1 0 2 2 3
+0 3 0 1 3
+4 1 0 2 5
+2 1 2
+5 4 2
+5 11 1100.00
 ```
 
 Actual output:
 
 ```text
-3
+1 0 2 2 3
+0 3 0 1 3
+4 1 0 2 5
+2 1 2
+5 4 2
+5 11 1100.00
 ```
 
 Result:
@@ -290,7 +343,7 @@ A friend
 What did they help with?
 
 ```text
-Telling me how to do the code
+Explaining every step on how to do the code
 ```
 
 What did you still do by yourself?
