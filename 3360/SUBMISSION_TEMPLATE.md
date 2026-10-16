@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3299/แปลงดอกไม้
+3360/หั่นขนมปัง
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-662755
+679082
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to determine which diagonal band contains the N-th planted cell.
+The problem wants to find the areas of the two largest pieces and print out the larger area first.
 ```
 
 ---
@@ -93,12 +93,14 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a map split input variable.
+Step 2: Create two list int map split input varaibles for the vertical cut(X) and horizontal cut(Y).
+Step 3: Create an empty list as width and set previous to 0.
+Step 4: Calculate the distance between consecutive cuts and include the final distance from the last cut to W.
+Step 5: Find the height of every section in the same way.
+Step 6: Each piece's area is its section width multiplied by its section height.
+Step 7: Track the two largest areas while checking every combination of widths and heights.
+Step 8: Print the two largest areas in a descending order.
 ```
 
 ---
@@ -118,12 +120,16 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a map split input variable, W, H, _(M), _(N).
+Step 2: Create two list int map split input varaibles for the vertical cut(X) and horizontal cut(Y).
+Step 3: Calculate each width by subtracting the previous cut position from the current one, starting at 0 and ending at W.
+Step 4: Calculate each height similarly, starting at 0 and ending at H.
+Step 5: Set largest and second_largest to 0.
+Step 6: Create a loop condition and calculate the area by width × height.
+Step 7: Create an if condition:
+- If the area is greater than largest, move largest to second_largest and set the area as largest.
+- Elif, if the area is greater than second_largest, set the area as second_largest.
+Step 8: Print the two largest areas in a descending order.
 ```
 
 ---
@@ -149,19 +155,21 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-1 17
+20 12 3 4
+2 10 14
+1 6 8 10
 ```
 
 Expected output:
 
 ```text
-6
+40 30
 ```
 
 Actual output:
 
 ```text
-6
+40 30
 ```
 
 Result:
@@ -181,19 +189,21 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-3 29
+4 5 3 4
+1 2 3
+1 2 3 4
 ```
 
 Expected output:
 
 ```text
-3
+1 1
 ```
 
 Actual output:
 
 ```text
-3
+1 1
 ```
 
 Result:
@@ -213,19 +223,21 @@ To see if the code works
 Input:
 
 ```text
-4 40
+8 9 8 7
+1 2 3
+1 2 3 4
 ```
 
 Expected output:
 
 ```text
-3
+25 5
 ```
 
 Actual output:
 
 ```text
-3
+25 5
 ```
 
 Result:
@@ -290,13 +302,13 @@ A friend
 What did they help with?
 
 ```text
-Telling me how to do the code
+Explaining the calculations for this problem
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code and trying to understand it
+Writing the code down
 ```
 
 Did you copy any code from another person?
