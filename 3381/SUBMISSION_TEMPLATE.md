@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3299/แปลงดอกไม้
+3381/Point Sorting
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-662755
+679083
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to determine which diagonal band contains the N-th planted cell.
+The problem asks us to sort N points on a 2D plane in ascending order based on the function (f(x, y) = x + y).
 ```
 
 ---
@@ -93,12 +93,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create an int input variable.
+Step 2: Create a for loop condition to check the input numbers.
+Step 3: Create an empty list to store the points.
+Step 4: Create another for loop to input the x and y coordinates of each point and add each point as a tuple (x,y) to the list.
+Step 5: Sort the list.
+Step 6: Print each point in the sorted list.
 ```
 
 ---
@@ -118,12 +118,12 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create t as an int input variable.
+Step 2: Create a for loop condition to check n as the input numbers.
+Step 3: Create an empty list to store the points.
+Step 4: Create another for loop to repeat n times and input the x and y coordinates of each point. Before appending (x,y) to points.
+Step 5: Sort points using the key (x+y,-y) in ascending order.
+Step 6: Print each point in the sorted list.
 ```
 
 ---
@@ -149,19 +149,34 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-1 17
+2
+2
+10 0
+2 8
+3
+-5 20
+1 1
+10 3
 ```
 
 Expected output:
 
 ```text
-6
+2 8
+10 0
+1 1
+10 3
+-5 20
 ```
 
 Actual output:
 
 ```text
-6
+2 8
+10 0
+1 1
+10 3
+-5 20
 ```
 
 Result:
@@ -175,25 +190,38 @@ Pass
 Why I chose this case:
 
 ```text
-To test if the code's output is the same as in the testcases.
+To see if the code works
 ```
 
 Input:
 
 ```text
-3 29
+1
+4
+5 2
+1 3
+0 4
+-2 1
 ```
 
 Expected output:
 
 ```text
-3
+-2 1
+1 3
+0 4
+5 2
+
 ```
 
 Actual output:
 
 ```text
-3
+-2 1
+1 3
+0 4
+5 2
+
 ```
 
 Result:
@@ -213,19 +241,33 @@ To see if the code works
 Input:
 
 ```text
-4 40
+1
+5
+3 3
+0 5
+4 1
+-1 2
+2 0
 ```
 
 Expected output:
 
 ```text
-3
+-1 2
+2 0
+4 1
+3 3
+0 5
 ```
 
 Actual output:
 
 ```text
-3
+-1 2
+2 0
+4 1
+3 3
+0 5
 ```
 
 Result:
@@ -259,7 +301,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -284,19 +326,19 @@ Not allowed:
 Who helped you?
 
 ```text
-A friend
+-
 ```
 
 What did they help with?
 
 ```text
-Telling me how to do the code
+-
 ```
 
 What did you still do by yourself?
 
 ```text
-Writing the code and trying to understand it
+Figuring out and writing the code down
 ```
 
 Did you copy any code from another person?
