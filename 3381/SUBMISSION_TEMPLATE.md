@@ -301,7 +301,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -326,13 +326,13 @@ Not allowed:
 Who helped you?
 
 ```text
--
+A friend
 ```
 
 What did they help with?
 
 ```text
--
+Told me that I forgot to use lambda and explain its use
 ```
 
 What did you still do by yourself?
