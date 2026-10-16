@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3299/แปลงดอกไม้
+3394/ส่งต่อ
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-662755
+679123
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to determine which diagonal band contains the N-th planted cell.
+The problem wants to find out how many different students receive the message, starting with student(s).
 ```
 
 ---
@@ -93,12 +93,11 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a map int split input varaible.
+Step 2: Create a forwarding destination for each student.
+Step 3: Set current as s and set a counter to 0.
+Step 4: Create a loop condition. And repeat while current is not 0 and has not been visited, mark current as visited, increase counter by 1, and move to the student that current forwards the message to.
+Step 5: Print the counter.
 ```
 
 ---
@@ -118,12 +117,11 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create a map int split input varaible, n and s.
+Step 2: Store the forwarding destinations in an array and create an empty set called visited.
+Step 3: Set current as s and set a counter to 0.
+Step 4: Create a loop condition. And repeat while current is not 0 and has not been visited, add current to visited, increase counter by 1, and update current to its forwarding destination.
+Step 5: Print the counter.
 ```
 
 ---
@@ -149,19 +147,22 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-1 17
+3 1
+2
+3
+0
 ```
 
 Expected output:
 
 ```text
-6
+3
 ```
 
 Actual output:
 
 ```text
-6
+3
 ```
 
 Result:
@@ -181,7 +182,12 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-3 29
+5 1
+2
+3
+1
+0
+3
 ```
 
 Expected output:
@@ -207,25 +213,30 @@ Pass
 Why I chose this case:
 
 ```text
-To see if the code works
+To test if the code's output is the same as in the testcases.
 ```
 
 Input:
 
 ```text
-4 40
+5 4
+2
+3
+1
+0
+3
 ```
 
 Expected output:
 
 ```text
-3
+1
 ```
 
 Actual output:
 
 ```text
-3
+1
 ```
 
 Result:
@@ -296,7 +307,7 @@ Telling me how to do the code
 What did you still do by yourself?
 
 ```text
-Writing the code and trying to understand it
+Writing the code
 ```
 
 Did you copy any code from another person?
