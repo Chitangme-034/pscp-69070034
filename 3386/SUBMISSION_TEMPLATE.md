@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-3299/แปลงดอกไม้
+3386/Duplicate I
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-662755
+679119
 ```
 
 OJ status:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The problem wants to determine which diagonal band contains the N-th planted cell.
+The problem wants to find the student IDs that appear in both groups.
 ```
 
 ---
@@ -93,12 +93,13 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create two input variables for m and n.
+Step 2: Create two empty set to store the m student IDs from group_one and store the n student IDs from group_two.
+Step 3: Find the IDs that appear in both groups.
+Step 4: Sort the matching IDs from largest to smallest.
+Step 5: Create an if condition:
+- If there are no matching IDs, print "Nope".
+- Else, print each matching ID on a separate line.
 ```
 
 ---
@@ -118,12 +119,13 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create 2 split input variables.
-Step 2: Set the diagonal number and total as 1.
-Step 3: Keep adding the size of each diagonal until the total number of cells is at least N.
-Step 4: The current diagonal contains the N-th cell.
-Step 5: Convert the diagonal number into the band number.
-Step 6: Print the band number.
+Step 1: Create two input variables for m and n.
+Step 2: Create two empty set to store the m student IDs from group_one and store the n student IDs from group_two.
+Step 3: Check each ID in group_one to see whether it also exists in group_two.
+Step 4: Sort the matching IDs in descending order.
+Step 5: Create an if condition:
+- If there are no matching IDs, print "Nope".
+- Else, print each matching ID on a separate line.
 ```
 
 ---
@@ -149,19 +151,40 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-1 17
+10
+10
+56070147
+59070002
+58070161
+59070044
+59070019
+59070116
+58070040
+59070032
+58070009
+59070048
+59070135
+59070063
+59070146
+59070149
+59070141
+59070103
+59070110
+59070008
+59070158
+59070188
 ```
 
 Expected output:
 
 ```text
-6
+Nope
 ```
 
 Actual output:
 
 ```text
-6
+Nope
 ```
 
 Result:
@@ -181,19 +204,51 @@ To test if the code's output is the same as in the testcases.
 Input:
 
 ```text
-3 29
+15
+12
+59070158
+59070074
+59070173
+59070012
+59070191
+59070078
+59070167
+59070127
+59070116
+59070105
+59070155
+58070153
+59070182
+59070047
+59070061
+59070185
+59070148
+59070065
+58070015
+59070173
+59070070
+59070012
+58070161
+59070116
+59070170
+58070108
+59070049
 ```
 
 Expected output:
 
 ```text
-3
+59070173
+59070116
+59070012
 ```
 
 Actual output:
 
 ```text
-3
+59070173
+59070116
+59070012
 ```
 
 Result:
@@ -213,19 +268,31 @@ To see if the code works
 Input:
 
 ```text
-4 40
+6
+5
+69070034
+69700020
+69070002
+69070045
+69070013
+69070086
+69070001
+69070037
+69070072
+69070027
+69070008
 ```
 
 Expected output:
 
 ```text
-3
+Nope
 ```
 
 Actual output:
 
 ```text
-3
+Nope
 ```
 
 Result:
@@ -290,7 +357,7 @@ A friend
 What did they help with?
 
 ```text
-Telling me how to do the code
+Explaining to me about the problem and tell me what to write
 ```
 
 What did you still do by yourself?
