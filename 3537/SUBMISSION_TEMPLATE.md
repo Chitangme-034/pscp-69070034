@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-2996 / สลับตัวอักษร
+3537/Impostor
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-551538
+693569
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-0-15 minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The question wants to swap the the letters in a word. From the last letter to be the first letter instead. And the letters in the output must be in lowercase eventhough if there are uppercase letters in the input word.
+The problem wants to finds the remaining Impostors and print the alive and dead players with their roles in alphabetical order.
 ```
 
 ---
@@ -93,9 +93,12 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create an input variables.
-Step 2: Add print with the [] and lowercase command.
-Step 3: Testing the result of the code.
+Step 1: Create a dictionary to store each player's name and role in a dictionary.
+Step 2: Create a loop to input the players until the input is "Start".
+Step 3: Create another loop to input the dead players until the input is "End".
+Step 4: Move each dead players from the alive dictionary to the dead dictionary.
+Step 5: Count the remaining players whose role is the imposter.
+Step 6: Sort and print out the players who are alive and dead by name.
 ```
 
 ---
@@ -115,9 +118,13 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create an input variables to type a word in.
-Step 2: Add print with the [] and lowercase command.
-Step 3: Testing the result of the code.
+Step 1: Create members and dead dictionaries.
+Step 2: Create a loop to input each player's data until "Start" and store the name and role in members.
+Step 3: Create another loop to input the dead players until the input is "End".
+Step 4: Remove each voted-out player from members and store them in dead.
+Step 5: Count the Impostor roles remaining in members.
+Step 6: Print the number of remaining Impostors.
+Step 7: Print ***Alive*** and all players in members and print ***Dead*** and all players in dead. Both in alphabetical orders.
 ```
 
 ---
@@ -143,19 +150,51 @@ To test if the testcase works on the code or not
 Input:
 
 ```text
-harry
+{"Green" : "Crewmate"}
+{"Cyan" : "Crewmate"}
+{"Red" : "Crewmate"}
+{"Pink" : "Crewmate"}
+{"Lime" : "Impostor"}
+{"Blue" : "Impostor"}
+{"White" : "Crewmate"}
+{"Orange" : "Crewmate"}
+Start
+Green
+Cyan
+White
+End
 ```
 
 Expected output:
 
 ```text
-yrrah
+2 Impostor Remains
+***Alive***
+Blue : Impostor
+Lime : Impostor
+Orange : Crewmate
+Pink : Crewmate
+Red : Crewmate
+***Dead***
+Cyan : Crewmate
+Green : Crewmate
+White : Crewmate
 ```
 
 Actual output:
 
 ```text
-yrrah
+2 Impostor Remains
+***Alive***
+Blue : Impostor
+Lime : Impostor
+Orange : Crewmate
+Pink : Crewmate
+Red : Crewmate
+***Dead***
+Cyan : Crewmate
+Green : Crewmate
+White : Crewmate
 ```
 
 Result:
@@ -169,25 +208,78 @@ Pass
 Why I chose this case:
 
 ```text
-To test if the code works or not
+To test if the testcase works on the code or not
 ```
 
 Input:
 
 ```text
-John
+{"Aqua" : "Crewmate"}
+{"Suisei" : "Impostor"}
+{"Fubuki" : "Crewmate"}
+{"Matsuri" : "Impostor"}
+{"Impostor" : "Crewmate"}
+{"Pekora" : "Impostor"}
+{"Korone" : "Crewmate"}
+{"Rushia" : "Crewmate"}
+{"Kusa" : "Crewmate"}
+{"Yagoo" : "Crewmate"}
+{"Marine" : "Crewmate"}
+{"Pinkguy" : "Crewmate"}
+{"Crewmate" : "Impostor"}
+{"Watame" : "Crewmate"}
+Start
+Aqua
+Suisei
+Fubuki
+Matsuri
+Crewmate
+Pekora
+End
 ```
 
 Expected output:
 
 ```text
-nhoj
+0 Impostor Remains
+***Alive***
+Impostor : Crewmate
+Korone : Crewmate
+Kusa : Crewmate
+Marine : Crewmate
+Pinkguy : Crewmate
+Rushia : Crewmate
+Watame : Crewmate
+Yagoo : Crewmate
+***Dead***
+Aqua : Crewmate
+Crewmate : Impostor
+Fubuki : Crewmate
+Matsuri : Impostor
+Pekora : Impostor
+Suisei : Impostor
 ```
 
 Actual output:
 
 ```text
-nhoj
+0 Impostor Remains
+***Alive***
+Impostor : Crewmate
+Korone : Crewmate
+Kusa : Crewmate
+Marine : Crewmate
+Pinkguy : Crewmate
+Rushia : Crewmate
+Watame : Crewmate
+Yagoo : Crewmate
+***Dead***
+Aqua : Crewmate
+Crewmate : Impostor
+Fubuki : Crewmate
+Matsuri : Impostor
+Pekora : Impostor
+Suisei : Impostor
 ```
 
 Result:
@@ -207,19 +299,82 @@ To test if the code works or not
 Input:
 
 ```text
-NADIA
+{"Naegi" : "Crewmate"}
+{"Asahina" : "Crewmate"}
+{"Togami" : "Crewmate"}
+{"Celestia" : "Crewmate"}
+{"Fujisaki" : "Crewmate"}
+{"Yamada" : "Crewmate"}
+{"Junko" : "Impostor"}
+{"Ishimaru" : "Crewmate"}
+{"Kirigiri" : "Crewmate"}
+{"Kuwata" : "Crewmate"}
+{"Owada" : "Crewmate"}
+{"Ogami" : "Crewmate"}
+{"Maizono" : "Crewmate"}
+{"Fukawa" : "Crewmate"}
+{"Hagakure" : "Crewmate"}
+{"Mukuro" : "Impostor"}
+Start
+Maizono
+Mukuro
+Kuwata
+Fujisaki
+Owada
+Ishimaru
+Yamada
+Celestia
+Ogami
+Junko
+End
 ```
 
 Expected output:
 
 ```text
-aidan
+0 Impostor Remains
+***Alive***
+Asahina : Crewmate
+Fukawa : Crewmate
+Hagakure : Crewmate
+Kirigiri : Crewmate
+Naegi : Crewmate
+Togami : Crewmate
+***Dead***
+Celestia : Crewmate
+Fujisaki : Crewmate
+Ishimaru : Crewmate
+Junko : Impostor
+Kuwata : Crewmate
+Maizono : Crewmate
+Mukuro : Impostor
+Ogami : Crewmate
+Owada : Crewmate
+Yamada : Crewmate
 ```
 
 Actual output:
 
 ```text
-aidan
+0 Impostor Remains
+***Alive***
+Asahina : Crewmate
+Fukawa : Crewmate
+Hagakure : Crewmate
+Kirigiri : Crewmate
+Naegi : Crewmate
+Togami : Crewmate
+***Dead***
+Celestia : Crewmate
+Fujisaki : Crewmate
+Ishimaru : Crewmate
+Junko : Impostor
+Kuwata : Crewmate
+Maizono : Crewmate
+Mukuro : Impostor
+Ogami : Crewmate
+Owada : Crewmate
+Yamada : Crewmate
 ```
 
 Result:
@@ -253,7 +408,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -278,19 +433,19 @@ Not allowed:
 Who helped you?
 
 ```text
--
+A friend
 ```
 
 What did they help with?
 
 ```text
--
+Explaining my mistake and advising me to use json
 ```
 
 What did you still do by yourself?
 
 ```text
-Doing the code
+Writing the code while trying to understand its functions along the way
 ```
 
 Did you copy any code from another person?

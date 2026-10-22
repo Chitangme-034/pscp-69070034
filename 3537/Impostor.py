@@ -3,12 +3,12 @@ import json
 def main():
     """Among Us"""
     members = {}
+    dead = {}
     while True:
         data = input()
         if data == "Start":
             break
         members.update(json.loads(data))
-    dead = {}
     while True:
         name = input()
         if name == "End":
