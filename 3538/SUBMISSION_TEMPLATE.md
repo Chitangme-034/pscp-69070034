@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-2996 / สลับตัวอักษร
+3538/B - Fully pair?
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-551538
+692718
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-0-15 minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The question wants to swap the the letters in a word. From the last letter to be the first letter instead. And the letters in the output must be in lowercase eventhough if there are uppercase letters in the input word.
+The problem wants to find the letters that cannot be paired and print them in the order they first appear.
 ```
 
 ---
@@ -93,9 +93,11 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create an input variables.
-Step 2: Add print with the [] and lowercase command.
-Step 3: Testing the result of the code.
+Step 1: Create an input variable for the letters.
+Step 2: Count how many times each letter appears using a dictionary.
+Step 3: Check each letter from left to right.
+Step 4: Create an if condition when a letter appears an odd number of times, add it to the result only once.
+Step 5: Create an if condition when there are no unpaired letters.
 ```
 
 ---
@@ -115,9 +117,13 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create an input variables to type a word in.
-Step 2: Add print with the [] and lowercase command.
-Step 3: Testing the result of the code.
+Step 1: Create an input variable for the letters.
+Step 2: Create a dictionary to store the count of each letter.
+Step 3: Create a loop to check and count each letter.
+Step 4: Create an empty string for the result.
+Step 5: Create another loop to check each of the letters again.
+Step 6: Create an if condition: If the current letter has an odd count, add it to the result and set its count to 0 to prevent duplicates.
+Step 7: Create another if condition: If the result is empty, print "fully paired". Otherwise, print the result.
 ```
 
 ---
@@ -143,19 +149,19 @@ To test if the testcase works on the code or not
 Input:
 
 ```text
-harry
+aa
 ```
 
 Expected output:
 
 ```text
-yrrah
+fully paired
 ```
 
 Actual output:
 
 ```text
-yrrah
+fully paired
 ```
 
 Result:
@@ -169,25 +175,25 @@ Pass
 Why I chose this case:
 
 ```text
-To test if the code works or not
+To test if the testcase works on the code or not
 ```
 
 Input:
 
 ```text
-John
+aabbccgddtee
 ```
 
 Expected output:
 
 ```text
-nhoj
+gt
 ```
 
 Actual output:
 
 ```text
-nhoj
+gt
 ```
 
 Result:
@@ -201,25 +207,25 @@ Pass
 Why I chose this case:
 
 ```text
-To test if the code works or not
+To test if the testcase works on the code or not
 ```
 
 Input:
 
 ```text
-NADIA
+baacbb
 ```
 
 Expected output:
 
 ```text
-aidan
+bc
 ```
 
 Actual output:
 
 ```text
-aidan
+bc
 ```
 
 Result:
@@ -253,7 +259,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-No
+Yes
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -278,19 +284,19 @@ Not allowed:
 Who helped you?
 
 ```text
--
+A friend
 ```
 
 What did they help with?
 
 ```text
--
+Checking my code
 ```
 
 What did you still do by yourself?
 
 ```text
-Doing the code
+Writing the code
 ```
 
 Did you copy any code from another person?
