@@ -15,13 +15,13 @@ If AI was used for this learning-log-required problem, also complete `ai_reflect
 OJ problem number/title:
 
 ```text
-2996 / สลับตัวอักษร
+3536/isPrime_large
 ```
 
 OJ submission ID, if submitted:
 
 ```text
-551538
+692713
 ```
 
 OJ status:
@@ -33,7 +33,7 @@ Pass
 Independent time spent on this problem:
 
 ```text
-0-15 minutes
+15-30 minutes
 ```
 
 Choose one:
@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-The question wants to swap the the letters in a word. From the last letter to be the first letter instead. And the letters in the output must be in lowercase eventhough if there are uppercase letters in the input word.
+The problem wants to check if the input number is a prime number or not. If it is, then print "YES". If it's not, then print "NO".
 ```
 
 ---
@@ -93,9 +93,11 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1: Create an input variables.
-Step 2: Add print with the [] and lowercase command.
-Step 3: Testing the result of the code.
+Step 1: Create an integer input variable for inputting a number.
+Step 2: Create an if condition when the input number is less than 2, then print "NO".
+Step 3: Create a loop to check for divisors from 2 up to the square root of the input number.
+Step 4: Create another if condition when any number divides the input evenly, then print "NO".
+Step 5: In case if there's no divisor found, then print "YES" instead.
 ```
 
 ---
@@ -115,9 +117,11 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-Step 1: Create an input variables to type a word in.
-Step 2: Add print with the [] and lowercase command.
-Step 3: Testing the result of the code.
+Step 1: Create  num as an integer input variable.
+Step 2: Create an if condition: If num is less than 2, then print "NO" and stop.
+Step 3: Set i to 2 and create a loop while i <= num ** 0.5.
+Step 4: Create another if condition: If not i % num, then print "NO" and stop. Then increase i by 1.
+Step 5: Print "Yes".
 ```
 
 ---
@@ -143,19 +147,19 @@ To test if the testcase works on the code or not
 Input:
 
 ```text
-harry
+3
 ```
 
 Expected output:
 
 ```text
-yrrah
+YES
 ```
 
 Actual output:
 
 ```text
-yrrah
+YES
 ```
 
 Result:
@@ -169,25 +173,25 @@ Pass
 Why I chose this case:
 
 ```text
-To test if the code works or not
+To test if the testcase works on the code or not
 ```
 
 Input:
 
 ```text
-John
+41
 ```
 
 Expected output:
 
 ```text
-nhoj
+YES
 ```
 
 Actual output:
 
 ```text
-nhoj
+YES
 ```
 
 Result:
@@ -201,25 +205,25 @@ Pass
 Why I chose this case:
 
 ```text
-To test if the code works or not
+To test if the testcase works on the code or not
 ```
 
 Input:
 
 ```text
-NADIA
+1000000007
 ```
 
 Expected output:
 
 ```text
-aidan
+YES
 ```
 
 Actual output:
 
 ```text
-aidan
+YES
 ```
 
 Result:
@@ -290,7 +294,7 @@ What did they help with?
 What did you still do by yourself?
 
 ```text
-Doing the code
+Writing and testing the code out
 ```
 
 Did you copy any code from another person?
